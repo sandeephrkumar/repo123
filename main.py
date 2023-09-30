@@ -1,7 +1,5 @@
-from datetime import datetime
+import time
 
-now = datetime.now()
-
-
-current_time = now.strftime("%H:%M:%S")
-print("Current Time =", current_time)
+t = time.localtime()
+current_time = time.strftime("%H:%M:%S", t)
+print(current_time)
